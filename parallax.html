@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukul's portfolio</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .parallax{
+            background-image: url("portfolioMedia/background.jpg");
+            height: 80vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #aboutme{
+            text-align: left;
+            text-size-adjust: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #audio{
+            background-image: url("portfolioMedia/Bg2.jpg");
+            height: 50vh;
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top:20vh ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Landing section of page -->
+    <div class='parallax'>
+
+    </div>
+    <!-- Section 2: About me -->
+    <div style="padding: 10px; text-align: center;">
+        <h1>About me</h1>
+        <ul id='aboutme' type=none>
+            <li>Name: Mukul Gupta</li>
+            <li>Quakifications : Graduate</li>
+            <li>Age : 21</li>
+            <li>CGPA : 7</li>
+        </ul>
+    </div>
+    <!-- Section 3: Ending page -->
+        <div id='audio'>
+            <audio controls loop>
+                <source src="portfolioMedia/audio.mp3">
+            </audio>
+        </div>
+    </div>
+   <center> <button><a href="dropdown.htm" style="text-decoration: none;">dropdown</a></button></center>
+</body>
+</html>
