@@ -28,15 +28,29 @@
                 box-shadow: 0px 0px 1px white;
                 width: 50%;
             }
-            #footer{
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: black;
-                color: white;
-                padding: 10px;
-                text-align: center;
+            #mail{
+                color: grey;
+                height: 30px;
+                width: 200px;
+            }
+            #psw{
+                color: grey;
+                height: 30px;
+                width: 200px;
+            }
+            #newsign{
+                text-decoration: none; 
+                color: black;
+                
+            }
+            #Signup
+            {
+                background-color: rgb(140, 177, 179);
+                height: 30px;
+                width: 150px;
+                border-radius: 10%;
+                border: 1px solid black;
+                box-shadow: 0px 0px 5px black;
             }
         </style>
     </head>
@@ -50,12 +64,17 @@
                     <div id="heading" style="text-align:center;">
                         <H1>Local Instagram</H1>
                         <br><br><br>
-                        <label>Username :</label>
-                        <input type='text'><br><br>
-                        <label>Password  :</label>
-                        <input type='password'><br><br>
-                        <button width='80%'>Login</button>
-                        <br><br><br>
+                        <form>
+                            <label>Username :</label>
+                            <input type='email' value="Email-id" id='mail'><br><br>
+                            <label>Password  :</label>
+                            <input type='password' id='psw'><br><br>
+                            <input type="reset" value=" Reset ">
+                            <button> Log in </button>
+                            <br><br>
+                            <button id="Signup" ><a id="newsign" href='Signup.html' >Create an account</a></button>
+                        </form>
+                        <br><br>
                         ---------OR---------
                         <br><br>
                         <span>
@@ -69,10 +88,6 @@
                 </div>
             </div>
             
-        </div>
-        <div id="footer">
-            <span>All rights &copy; to facebook</span>
-            <p>This is just a clone not even close to real and is non functional</p>
         </div>
     </body>
 </html>
