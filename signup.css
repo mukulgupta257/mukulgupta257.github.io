@@ -1,0 +1,55 @@
+ /* Background color */
+ body{
+    background-color: rgb(226, 223, 223);
+}
+/* form alingment */
+#form{
+    background-color:white;
+    text-align: center;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 5px black;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+    width: 400px;
+}
+/* textbox formatting */
+#textbox{
+    height: 30px;
+    width: 250px;
+    background-color: rgb(245, 243, 243);
+    border: 0px;
+    padding: 10px;
+}
+/* label formatting */
+h2{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    
+}
+/* button formatting */
+#action{
+    margin-right: 10px;
+    padding: 5px;
+    height: 30px;
+    width: 100px;
+    box-shadow: 0px 0px 2px lightskyblue;
+    border: 1px solid;
+    background-color:rgb(75, 207, 75);
+    color: honeydew;
+}
+/* link to go back to login page */
+#login{
+    font-size: 20px;
+}
+/* textbox for name formatting */
+#name{
+    width: 120px;
+    height: 30px;
+    background-color: rgb(245, 243, 243);
+    border: 0px;
+    padding: 8px;
+}
