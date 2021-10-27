@@ -6,48 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle</title>
     <style>
-        body{
-            margin: auto;
-            width: 50%;
-            padding: 10px;
+        #center{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 25%; 
+            margin-left: -150px;
+            margin-top: -150px;
         }
         .Triangle{
-            width: 0px;
-            height:0px;
+            position: absolute;
             border: 200px solid transparent;
             border-bottom: 200px solid #ff0000;
-            position: fixed;
             z-index: 3;
         }
         .sub_triangle{
+            position: absolute;
             margin-top:100px ;
-            width: 0px;
-            height:0px;
             border: 200px solid transparent;
             border-bottom: 200px solid #000000;
-            position: absolute;
             z-index: 2;
         }
         .sub_triangle1{
+            position: absolute;
             margin-top:200px ;
-            width: 0px;
-            height:0px;
             border: 200px solid transparent;
             border-bottom: 200px solid #00ff73;
-            position: absolute;
             z-index: 1;
         }
     </style>
 </head>
 <body>
-    <div class='Triangle'>
+    <div id='center'>
         
-    </div>
-    <div class="sub_triangle">
+        <div class='Triangle'>
+        
+        </div>
+        <div class="sub_triangle">
 
-    </div>
-    <div class="sub_triangle1">
+        </div>
+        <div class="sub_triangle1">
 
-    </div>
+        </div>
+    </div>    
 </body>
 </html>
