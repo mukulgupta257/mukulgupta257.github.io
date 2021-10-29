@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        #container{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #center{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 20px;
+            height: 90vh;
+            width: 50vw;
+            align-items: center;
+            border: 2px solid black;
+            box-shadow:0px 0px 10px #000000;
+            text-align: center;
+        }
+        [minlength]{
+            border: 2px solid grey;
+            border-radius: 10%;
+            height: 20px;
+            width: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id='container'>
+       <div id='center'>
+           <h2>Survey form for mukul's food shop</h2>
+           <form>
+               <label>Your name :</label>
+               <input type='text' placeholder="Your name here " pattern="[a-zA-Z]+" minlength="3">
+               <br><br>
+               <label>Phone number : </label>
+               <input type="tel" placeholder='Your number here' minlength="10" maxlength="10" pattern="[0-9]+">
+               <br><br>
+               <label for="age">Gender :</label>
+               <select name='age' >
+                   <option value='male'>Male</option>
+                   <option value='female'>Female</option>
+               </select>
+               <br><br>
+               <label>Date of birth : </label>
+               <input type='date'>
+               <br><br>
+               <label>Rate us from 1-5 : (1-min, 5-max)</label>
+               <br><br>
+               <input type="radio" name="star">
+               <label>1(poor)</label>
+               <input type="radio" name="star">
+               <label>2(below-average)</label>
+               <input type="radio" name="star">
+               <label">3(average)</label>
+               <input type="radio" name="star">
+               <label>4(good)</label>
+               <input type="radio" name="star">
+               <label >5(best)</label>
+               <br><br>
+               <label>Dish you loved </label>
+               <br><br>
+               <label>Pizza</label>
+               <input type="checkbox">
+               <label>Burger</label>
+               <input type="checkbox">
+               <label>Fries</label>
+               <input type="checkbox">
+               <label>Momose</label>
+               <input type="checkbox">
+               
+               <center><button>Submit</button></center>
+           </form>
+       </div> 
+    </div>
+</body>
+</html>
