@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script>
+        // function to update the value of textbox when button 1 is clicked
+        function clicked(id){
+            var a=document.getElementById('one').innerText
+            var inputbox=document.getElementById('box')
+            inputbox.value=a
+        }
+        // Function to add 1 every time it is clicked
+        function attempt(id){
+            var a=document.getElementById('box').value
+            var box=document.getElementById('box')
+            var b=parseInt(a)                       //pareInt is used to convert the string type to int type
+            b=b+1
+            box.value=b
+            
+        }
+        // function clickedoperation(id){
+            
+        // }
+    </script>
+</head>
+<body>
+    <h1>
+        JAVASCRIPT EMBEDDING
+    </h1>
+    <button id='one' onclick=" clicked('one') ">1</button>
+    <button id='add' onclick=" attempt('add') ">+</button>
+    <input type='text' id='box' value="0" disabled/>
+</body>
+</html>
