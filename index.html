@@ -5,12 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS</title>
+    <style>
+        /* margin to be zero in complete document by default */
+        *{
+            margin: 0px;
+        }
+        /* background formatting */
+        .background{
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(0deg,rgb(4, 112, 103),#a4fce2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* center div to center all element */
+        .center{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* input type formatting */
+        input{
+            border: 0px;
+            background-color: #faeaea;
+            text-align: center;
+            margin: 20px;
+            width: 250px;
+            height: 40px;
+            font-size: large;
+            box-shadow: 0px 0px 5px #808080;
+        }
+        /* button styling */
+        button{
+            box-shadow: 0px 0px 5px #808080;
+            border: 0px;
+            text-align: center;
+            margin: 20px;
+            width: 200px;
+            height: 40px;
+            font-size: large;
+        }
+        /* when cursor is over button */
+        button:hover{
+            background-color: #a52a2a;
+            text-align: center;
+            margin: 20px;
+            width: 200px;
+            height: 40px;
+            font-size: large;
+        }
+    </style>
     <script>
         // function to update the value of textbox when button 1 is clicked
         function clicked(id){
-            var a=document.getElementById('one').innerText
             var inputbox=document.getElementById('box')
-            inputbox.value=a
+            inputbox.value=0
         }
         // Function to add 1 every time it is clicked
         function attempt(id){
@@ -21,17 +74,27 @@
             box.value=b
             
         }
-        // function clickedoperation(id){
-            
-        // }
+        // function for sub
+        function sub(id){
+            var a=document.getElementById('box').value
+            var box=document.getElementById('box')
+            var b=parseInt(a)                       //pareInt is used to convert the string type to int type
+            b=b-1
+            box.value=b
+        }
     </script>
 </head>
 <body>
-    <h1>
-        JAVASCRIPT EMBEDDING
-    </h1>
-    <button id='one' onclick=" clicked('one') ">1</button>
-    <button id='add' onclick=" attempt('add') ">+</button>
-    <input type='text' id='box' value="0" disabled/>
+    <div class="background">
+        <h1>
+            Addition and Subtraction
+        </h1>
+        <div class="center">
+            <input type='text' id='box' value="0" disabled/>
+            <button id="reset" onclick="sub('reset')">-</button>
+            <button id='one' onclick=" clicked('one') ">Reset</button>
+            <button id='add' onclick=" attempt('add') ">+</button>
+        </div>
+    </div>
 </body>
 </html>
